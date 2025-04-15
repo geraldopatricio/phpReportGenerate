@@ -46,6 +46,10 @@ Siga estes passos para configurar o projeto em seu ambiente local:
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" width="50" title="JavaScript">
 </div>
 
+## 🎥 Video Demonstration
+
+[![Watch the project video demonstration](https://img.youtube.com/vi/MNjB-Q_pTME/0.jpg)](https://youtu.be/MNjB-Q_pTME)
+
 ## 📸 Screenshots
 
 <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 10px;">
