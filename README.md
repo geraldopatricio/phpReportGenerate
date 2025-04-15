@@ -1,4 +1,4 @@
-# 📄 Sistema Gerador de Relatórios em PHP para Bancos MySQL
+# 📄 Gerador de Relatórios em PHP para MySQL
 
 ![PHP Logo](https://upload.wikimedia.org/wikipedia/commons/2/27/PHP-logo.svg)
 
@@ -15,20 +15,18 @@ Siga estes passos para configurar o projeto em seu ambiente local:
    - PHP 8.0 ou superior
    - MySQL 5.7 ou superior
    - Apache/Nginx
-   - Composer (para dependências)
+   - Não necessita de Composer 
 
 2. **Configuração**:
    ```bash
-   git clone [seu-repositorio]
-   cd [nome-do-projeto]
+   git clone https://github.com/geraldopatricio/phpReportGenerate.git
+   cd https://github.com/geraldopatricio/phpReportGenerate.git
    siga os passos das imagens abaixo
    ```
 
 3. **Banco de Dados**:
    ```sql
-   CREATE DATABASE nome_do_banco;
-   USE nome_do_banco;
-   SOURCE database/dump.sql;
+   Fica a seu critério, pois vai servir justamente para ler suas bases, ok.
    ```
 
 4. **Configurações**:
@@ -80,4 +78,4 @@ Entre em contato conosco para suporte, dúvidas ou parcerias:
 
 ---
 
-Desenvolvido com ❤️ por [Seu Nome/Equipe] - © 2023
+Desenvolvido com ❤️ por [GPSOFT - Geraldo P Melo] - © 2025
