@@ -1,16 +1,12 @@
-# 📄 README - Sistema PHP & MySQL
+# 📄 Sistema Gerador de Relatórios em PHP para Bancos MySQL
 
 ![PHP Logo](https://upload.wikimedia.org/wikipedia/commons/2/27/PHP-logo.svg)
-![MySQL Logo](https://upload.wikimedia.org/wikipedia/en/6/62/MySQL.svg)
 
 ## ✨ Objetivo
-Este projeto tem como objetivo fornecer uma solução moderna e eficiente para [descreva brevemente o propósito principal do sistema]. Desenvolvido com as melhores práticas de programação, garantindo performance, segurança e escalabilidade.
+Este projeto tem como objetivo fornecer uma solução moderna e eficiente para Criar seus relatórios com base em tabelas do banco mysql ou querys. 
 
 ## 📋 Descrição
-[Descreva aqui detalhadamente o que seu projeto faz, suas principais funcionalidades e características marcantes. Inclua informações sobre o público-alvo e casos de uso.]
-
-Exemplo:
-> "Sistema de gerenciamento de conteúdo desenvolvido para pequenas empresas, permitindo a administração de produtos, clientes e pedidos através de uma interface intuitiva."
+Projeto Simples, mas totalmente customizável, que vai ajudar bastante na agilidade de suas entregas no quesito relatórios.
 
 ## 🛠️ Instalação
 Siga estes passos para configurar o projeto em seu ambiente local:
@@ -25,7 +21,7 @@ Siga estes passos para configurar o projeto em seu ambiente local:
    ```bash
    git clone [seu-repositorio]
    cd [nome-do-projeto]
-   composer install
+   siga os passos das imagens abaixo
    ```
 
 3. **Banco de Dados**:
@@ -36,8 +32,7 @@ Siga estes passos para configurar o projeto em seu ambiente local:
    ```
 
 4. **Configurações**:
-   - Renomeie `.env.example` para `.env`
-   - Configure as variáveis de ambiente
+   - "Talvez" precise mudar algo no seu php.ini, portanto fique atento as mensagens de alertas.
 
 5. **Iniciar**:
    ```bash
@@ -56,11 +51,11 @@ Siga estes passos para configurar o projeto em seu ambiente local:
 ## 📸 Screenshots
 
 <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 10px;">
-  <img src="img/screenshot1.jpg" alt="Tela inicial" style="max-width: 100%; border: 1px solid #ddd;">
-  <img src="img/screenshot2.jpg" alt="Painel administrativo" style="max-width: 100%; border: 1px solid #ddd;">
-  <img src="img/screenshot3.jpg" alt="Formulário de cadastro" style="max-width: 100%; border: 1px solid #ddd;">
-  <img src="img/screenshot4.jpg" alt="Relatórios" style="max-width: 100%; border: 1px solid #ddd;">
-  <img src="img/screenshot5.jpg" alt="Configurações" style="max-width: 100%; border: 1px solid #ddd; grid-column: span 2;">
+  <img src="img/1.jpg" alt="Tela inicial" style="max-width: 100%; border: 1px solid #ddd;">
+  <img src="img/2.jpg" alt="Painel administrativo" style="max-width: 100%; border: 1px solid #ddd;">
+  <img src="img/3.jpg" alt="Formulário de cadastro" style="max-width: 100%; border: 1px solid #ddd;">
+  <img src="img/4.jpg" alt="Relatórios" style="max-width: 100%; border: 1px solid #ddd;">
+  <img src="img/5.jpg" alt="Configurações" style="max-width: 100%; border: 1px solid #ddd; grid-column: span 2;">
 </div>
 
 ## 📞 Contato & Suporte
@@ -68,19 +63,19 @@ Siga estes passos para configurar o projeto em seu ambiente local:
 Entre em contato conosco para suporte, dúvidas ou parcerias:
 
 <div style="display: flex; justify-content: center; gap: 15px; margin: 20px 0;">
-  <a href="https://instagram.com/seuinstagram" target="_blank">
+  <a href="https://instagram.com/patriciomelofilho" target="_blank">
     <img src="https://upload.wikimedia.org/wikipedia/commons/e/e7/Instagram_logo_2016.svg" width="30" alt="Instagram">
   </a>
-  <a href="https://wa.me/5511999999999" target="_blank">
+  <a href="https://wa.me/5585991508104" target="_blank">
     <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" width="30" alt="WhatsApp">
   </a>
-  <a href="mailto:suporte@seusistema.com">
+  <a href="mailto:geraldo@gpsoft.net.br">
     <img src="https://upload.wikimedia.org/wikipedia/commons/7/7e/Gmail_icon_%282020%29.svg" width="30" alt="E-mail">
   </a>
 </div>
 
-**E-mail:** suporte@seusistema.com  
-**WhatsApp:** (11) 99999-9999  
+**E-mail:** geraldo@gpsoft.net.br ou gpatricio.melo@gmail.com  
+**WhatsApp:** (85) 99150-8104  
 **Horário de atendimento:** Seg-Sex, 9h-18h
 
 ---
