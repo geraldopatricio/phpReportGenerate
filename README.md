@@ -76,7 +76,7 @@ Entre em contato conosco para suporte, dúvidas ou parcerias:
   </a>
 </div>
 
-**E-mail:** geraldo@gpsoft.net.br ou gpatricio.melo@gmail.com  
+**E-mail:** geraldo@gpsoft.net.br ou Paypal Doações: gpatricio.melo@gmail.com  
 **WhatsApp:** (85) 99150-8104  
 **Horário de atendimento:** Seg-Sex, 9h-18h
 
