@@ -7,6 +7,11 @@ ini_set('display_errors', 1);
 if (!file_exists('relatorios')) {
     mkdir('relatorios', 0777, true);
 }
+
+function safe_html($value) {
+    return htmlspecialchars((string) ($value ?? ''), ENT_QUOTES, 'UTF-8');
+}
+
 ?>
 
 <!DOCTYPE html>
@@ -154,11 +159,18 @@ if (!file_exists('relatorios')) {
                 }
                 
                 while ($row = $result->fetch_row()) {
+                    /*
                     echo '<input type="radio" name="tabela" value="' . htmlspecialchars($row[0]) . '" 
                           id="t_' . htmlspecialchars($row[0]) . '" 
                           ' . (isset($_POST['tabela']) && $_POST['tabela'] === $row[0] ? 'checked' : '') . '
                           onclick="autoSubmit()">';
                     echo '<label for="t_' . htmlspecialchars($row[0]) . '">' . htmlspecialchars($row[0]) . '</label><br>';
+                    */
+                    echo '<input type="radio" name="tabela" value="' . htmlspecialchars($row[0] ?? '') . '" 
+                        id="t_' . htmlspecialchars($row[0] ?? '') . '" 
+                        ' . (isset($_POST['tabela']) && $_POST['tabela'] === $row[0] ? 'checked' : '') . '
+                        onclick="autoSubmit()">';
+                    echo '<label for="t_' . htmlspecialchars($row[0] ?? '') . '">' . htmlspecialchars($row[0] ?? '') . '</label><br>';
                 }
                 
                 echo '</div>';
@@ -227,7 +239,8 @@ elseif (isset($_POST['metodo']) && $_POST['metodo'] === 'query') {
                 echo '<h3>Insira sua consulta SQL:</h3>';
                 echo '<p>Use <strong>?</strong> para indicar parâmetros que serão transformados em campos de filtro</p>';
                 echo '<textarea name="query" rows="6" cols="80" placeholder="Exemplo: SELECT * FROM clientes WHERE nome LIKE ? AND cidade = ?">' . 
-                     (isset($_POST['query']) ? htmlspecialchars($_POST['query']) : '') . '</textarea><br>';
+                     // (isset($_POST['query']) ? htmlspecialchars($_POST['query']) : '') . '</textarea><br>';
+                     (isset($_POST['query']) ? htmlspecialchars($_POST['query'] ?? '') : '') . '</textarea><br>';
                 echo '<input type="submit" name="enviar_query" value="Continuar">';
                 echo '</div>';
                 
@@ -549,7 +562,8 @@ elseif (isset($_POST['metodo']) && $_POST['metodo'] === 'query') {
                 $conteudo_php .= "while (\$row = \$result->fetch_assoc()) {\n";
                 $conteudo_php .= "    echo '<tr>';\n";
                 $conteudo_php .= "    foreach (\$row as \$value) {\n";
-                $conteudo_php .= "        echo '<td>' . htmlspecialchars(\$value) . '</td>';\n";
+                // $conteudo_php .= "        echo '<td>' . htmlspecialchars(\$value) . '</td>';\n";
+                $conteudo_php .= "        echo '<td>' . htmlspecialchars(\$value ?? '') . '</td>';\n";
                 $conteudo_php .= "    }\n";
                 $conteudo_php .= "    echo '</tr>';\n";
                 $conteudo_php .= "}\n";
